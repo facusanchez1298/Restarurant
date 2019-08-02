@@ -51,7 +51,7 @@ namespace prueba
         {
             int num = int.Parse(ancho);
 
-            return (num >= 8) && (num <= 100);
+            return (num >= 8) && (num <= 40);
         }
 
         public bool esInt(string numero)
@@ -63,6 +63,11 @@ namespace prueba
                 return true;
             }
             else return false;
+        }
+
+        private void AgregarMedidas_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

@@ -95,7 +95,7 @@
             this.label3.Size = new System.Drawing.Size(195, 56);
             this.label3.TabIndex = 16;
             this.label3.Text = "Especifique las medidas de su local en metros. No puede ser menor a 8 ni mayor a " +
-    "100";
+    "40";
             this.label3.UseCompatibleTextRendering = true;
             // 
             // AgregarMedidas
@@ -115,6 +115,7 @@
             this.ShowIcon = false;
             this.ShowInTaskbar = false;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Load += new System.EventHandler(this.AgregarMedidas_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

@@ -66,14 +66,14 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="prueba.exe" size="1803736">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="prueba.exe" size="1803224">
       <assemblyIdentity name="prueba" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>kxuJcbE0ckA6WD/JSQMGJNQ1qtfy5zSaO5hVhL2NIoI=</dsig:DigestValue>
+        <dsig:DigestValue>pgLRC3SdnyePDRY4I7nLZ7l7uz6COilHsISO2P+dzww=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>

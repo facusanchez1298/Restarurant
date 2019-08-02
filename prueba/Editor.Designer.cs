@@ -28,8 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
             this.selector = new System.Windows.Forms.FlowLayoutPanel();
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
             this.pictureBox5 = new System.Windows.Forms.PictureBox();
@@ -43,8 +41,8 @@
             this.trackBarAncho = new System.Windows.Forms.TrackBar();
             this.textBoxAlto = new System.Windows.Forms.TextBox();
             this.textBoxAncho = new System.Windows.Forms.TextBox();
-            this.panel = new prueba.Plano();
             this.buttonEditar = new System.Windows.Forms.Button();
+            this.panel = new prueba.Plano();
             this.selector.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
@@ -57,28 +55,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.trackBarAltura)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.trackBarAncho)).BeginInit();
             this.SuspendLayout();
-            // 
-            // label1
-            // 
-            this.label1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(15, 441);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(35, 13);
-            this.label1.TabIndex = 5;
-            this.label1.Text = "label1";
-            this.label1.MouseDown += new System.Windows.Forms.MouseEventHandler(this.item_MouseDown);
-            // 
-            // label2
-            // 
-            this.label2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(15, 465);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(35, 13);
-            this.label2.TabIndex = 5;
-            this.label2.Text = "label1";
-            this.label2.MouseDown += new System.Windows.Forms.MouseEventHandler(this.item_MouseDown);
             // 
             // selector
             // 
@@ -231,8 +207,8 @@
             // 
             this.trackBarAltura.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.trackBarAltura.Location = new System.Drawing.Point(291, 438);
-            this.trackBarAltura.Maximum = 100;
-            this.trackBarAltura.Minimum = 10;
+            this.trackBarAltura.Maximum = 40;
+            this.trackBarAltura.Minimum = 8;
             this.trackBarAltura.Name = "trackBarAltura";
             this.trackBarAltura.Size = new System.Drawing.Size(116, 45);
             this.trackBarAltura.TabIndex = 15;
@@ -244,8 +220,8 @@
             // 
             this.trackBarAncho.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.trackBarAncho.Location = new System.Drawing.Point(456, 438);
-            this.trackBarAncho.Maximum = 100;
-            this.trackBarAncho.Minimum = 10;
+            this.trackBarAncho.Maximum = 40;
+            this.trackBarAncho.Minimum = 8;
             this.trackBarAncho.Name = "trackBarAncho";
             this.trackBarAncho.Size = new System.Drawing.Size(104, 45);
             this.trackBarAncho.TabIndex = 16;
@@ -275,6 +251,22 @@
             this.textBoxAncho.TabStop = false;
             this.textBoxAncho.KeyDown += new System.Windows.Forms.KeyEventHandler(this.tocarBoton);
             // 
+            // buttonEditar
+            // 
+            this.buttonEditar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.buttonEditar.BackColor = System.Drawing.Color.Azure;
+            this.buttonEditar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.buttonEditar.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.buttonEditar.Font = new System.Drawing.Font("Arial Rounded MT Bold", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonEditar.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(148)))), ((int)(((byte)(188)))));
+            this.buttonEditar.Location = new System.Drawing.Point(618, 438);
+            this.buttonEditar.Name = "buttonEditar";
+            this.buttonEditar.Size = new System.Drawing.Size(93, 40);
+            this.buttonEditar.TabIndex = 17;
+            this.buttonEditar.Text = "Aceptar";
+            this.buttonEditar.UseVisualStyleBackColor = false;
+            this.buttonEditar.Click += new System.EventHandler(this.buttonEditar_Click);
+            // 
             // panel
             // 
             this.panel.AllowDrop = true;
@@ -290,21 +282,6 @@
             this.panel.TabStop = false;
             this.panel.KeyDown += new System.Windows.Forms.KeyEventHandler(this.tocarBoton);
             // 
-            // buttonEditar
-            // 
-            this.buttonEditar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-            this.buttonEditar.BackColor = System.Drawing.Color.Azure;
-            this.buttonEditar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.buttonEditar.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.buttonEditar.Font = new System.Drawing.Font("Arial Rounded MT Bold", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonEditar.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(148)))), ((int)(((byte)(188)))));
-            this.buttonEditar.Location = new System.Drawing.Point(618, 438);
-            this.buttonEditar.Name = "buttonEditar";
-            this.buttonEditar.Size = new System.Drawing.Size(93, 40);
-            this.buttonEditar.TabIndex = 17;
-            this.buttonEditar.Text = "Aceptar";
-            this.buttonEditar.UseVisualStyleBackColor = false;
-            // 
             // Editor
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -318,8 +295,6 @@
             this.Controls.Add(this.trackBarAltura);
             this.Controls.Add(this.selector);
             this.Controls.Add(this.panel);
-            this.Controls.Add(this.label2);
-            this.Controls.Add(this.label1);
             this.Name = "Editor";
             this.Size = new System.Drawing.Size(809, 509);
             this.Tag = "Aceptar";
@@ -342,8 +317,6 @@
         }
 
         #endregion
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Label label2;
         private System.Windows.Forms.FlowLayoutPanel selector;
         private System.Windows.Forms.PictureBox pictureBox4;
         private System.Windows.Forms.PictureBox pictureBox5;

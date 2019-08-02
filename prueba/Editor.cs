@@ -9,9 +9,11 @@ namespace prueba
 {
     public partial class Editor : UserControl
     {
+        Form1 form1;
 
-        public Editor()
+        public Editor(Form1 form1)
         {
+            this.form1 = form1;
             conexion = new Conexion();
             InitializeComponent();
             cantidad = 0;
@@ -485,8 +487,8 @@ namespace prueba
 
         private void trackBar_Scroll(object sender, EventArgs e)
         {
-            int alto = trackBarAltura.Value * 6 + (trackBarAltura.Value / 10) * 6;
-            int ancho = trackBarAncho.Value * 6 + (trackBarAncho.Value / 10) * 6;
+            int alto = trackBarAltura.Value * 15 + (trackBarAltura.Value / 10) * 15;
+            int ancho = trackBarAncho.Value * 15 + (trackBarAncho.Value / 10) * 15;
 
             if (alto > conexion.mayorY(plantilla))
             {
@@ -511,9 +513,6 @@ namespace prueba
 
         private void Editor_Resize(object sender, EventArgs e)
         {
-            label1.Text = this.panel.Height.ToString();
-            label2.Text = this.panel.Width.ToString();
-
             recargarPlano();           
         }
         /// <summary>
@@ -523,6 +522,11 @@ namespace prueba
         {
             conexion.cargarTrackBar(plantilla, trackBarAltura, trackBarAncho);
             mostrarValoresTrackBar();
+        }
+
+        private void buttonEditar_Click(object sender, EventArgs e)
+        {
+            form1.button1_Click(sender, e);
         }
     }
 }

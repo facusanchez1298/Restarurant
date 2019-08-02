@@ -1175,8 +1175,9 @@ namespace prueba
 
                 while (lector.Read())
                 {
-                    planoVer.Height = lector.GetInt32(0) * 6 + (lector.GetInt32(0) / 10) * 6;
-                    planoVer.Width = lector.GetInt32(1) * 6 + (lector.GetInt32(1) / 10) * 6;
+                    planoVer.Height = lector.GetInt32(0) * 15 + (lector.GetInt32(0) / 10) * 15;
+                    planoVer.Width = lector.GetInt32(1) * 15 + (lector.GetInt32(1) / 10) * 15;
+                    //Mensaje.mensajeError((lector.GetInt32(0) * 15 + (lector.GetInt32(0) / 10) * 15).ToString());
                 }
 
                 return planoVer;
