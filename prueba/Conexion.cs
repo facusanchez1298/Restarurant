@@ -852,18 +852,20 @@ namespace prueba
                             item.Click += ver.item_DoubleClick;
                             item.MouseHover += ver.Mouse_hover;
                             item.MouseLeave += ver.Mouse_Leave;
-
                             break;
 
                         case "Mesa Roja 4":
                             item.Image = Resources.mesa_roja_4;
-                            item.SizeMode = PictureBoxSizeMode.Zoom;
+                            item.SizeMode = PictureBoxSizeMode.StretchImage;
+                            item.Click += ver.item_DoubleClick;
+                            item.MouseHover += ver.Mouse_hover;
+                            item.MouseLeave += ver.Mouse_Leave;
 
                             break;
 
                         case "Mesa Negra 4":
                             item.Image = Resources.mesa_negra_4;
-                            item.SizeMode = PictureBoxSizeMode.Zoom;
+                            item.SizeMode = PictureBoxSizeMode.StretchImage;
                             item.Click += ver.item_DoubleClick;
                             item.MouseHover += ver.Mouse_hover;
                             item.MouseLeave += ver.Mouse_Leave;
@@ -873,7 +875,7 @@ namespace prueba
 
                         case "Mesa Negra 6":
                             item.Image = Resources.mesa_negra_6;
-                            item.SizeMode = PictureBoxSizeMode.Zoom;
+                            item.SizeMode = PictureBoxSizeMode.StretchImage;
                             item.Click += ver.item_DoubleClick;
                             item.MouseHover += ver.Mouse_hover;
                             item.MouseLeave += ver.Mouse_Leave;
@@ -881,7 +883,7 @@ namespace prueba
 
                         case "Mesa Blanca 6":
                             item.Image = Resources.mesa_blanca_6_personas;
-                            item.SizeMode = PictureBoxSizeMode.Zoom;
+                            item.SizeMode = PictureBoxSizeMode.StretchImage;
                             item.Click += ver.item_DoubleClick;
                             item.MouseHover += ver.Mouse_hover;
                             item.MouseLeave += ver.Mouse_Leave;
@@ -991,27 +993,27 @@ namespace prueba
 
                         case "Mesa Roja 4":
                             item.Image = Resources.mesa_roja_4;
-                            item.SizeMode = PictureBoxSizeMode.Zoom;
+                            item.SizeMode = PictureBoxSizeMode.StretchImage;
                             break;
 
                         case "Mesa Negra 4":
                             item.Image = Resources.mesa_negra_4;
-                            item.SizeMode = PictureBoxSizeMode.Zoom;
+                            item.SizeMode = PictureBoxSizeMode.StretchImage;
                             break;
 
                         case "Mesa Blanca 4":
                             item.Image = Resources.mesa_de_madera_4_;
-                            item.SizeMode = PictureBoxSizeMode.Zoom;
+                            item.SizeMode = PictureBoxSizeMode.StretchImage;
                             break;
 
                         case "Mesa Negra 6":
                             item.Image = Resources.mesa_negra_6;
-                            item.SizeMode = PictureBoxSizeMode.Zoom;
+                            item.SizeMode = PictureBoxSizeMode.StretchImage;
                             break;
 
                         case "Mesa Blanca 6":
                             item.Image = Resources.mesa_blanca_6_personas;
-                            item.SizeMode = PictureBoxSizeMode.Zoom;
+                            item.SizeMode = PictureBoxSizeMode.StretchImage;
                             break;
 
                         case "Pared":

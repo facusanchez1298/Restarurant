@@ -46,6 +46,9 @@ namespace prueba
             );
         }
 
+        /// <summary>
+        /// coloca al panel en el tamaño fijado y trae todas las mesas
+        /// </summary>
         public void recargarPlano()
         {
             cargarTrackBar();
@@ -295,16 +298,16 @@ namespace prueba
             seleccionado.BackColor = Color.Transparent;
             seleccionado.Image = (control as PictureBox).Image;
             seleccionado.Location = control.Location;
-            seleccionado.SizeMode = PictureBoxSizeMode.Zoom;
+            seleccionado.SizeMode = PictureBoxSizeMode.StretchImage;
 
             #region tamaños
             Size mesaNormal = new Size(40, 40);
             Size MesaGrande = new Size(80, 80);
             Size MesaRectangular = new Size(60, 40);
             Size silla = new Size(20, 20);
-            Size pared = new Size(180, 30);
+            Size pared = new Size(100, 10);
             Size mesita = new Size(30, 30);
-            Size TablaBar = new Size(180, 20);
+            Size TablaBar = new Size(120, 20);
             #endregion
 
             switch (control.Tag)
@@ -335,7 +338,6 @@ namespace prueba
 
                 case "Pared":
                     seleccionado.Size = pared;
-                    seleccionado.SizeMode = seleccionado.SizeMode = PictureBoxSizeMode.StretchImage;
                     break;               
             }
 
@@ -505,6 +507,9 @@ namespace prueba
             
         }
 
+        /// <summary>
+        /// coloca los valores de los trackbar en los text box
+        /// </summary>
         public void mostrarValoresTrackBar()
         {
             textBoxAlto.Text = trackBarAltura.Value.ToString();
@@ -515,6 +520,7 @@ namespace prueba
         {
             recargarPlano();           
         }
+       
         /// <summary>
         /// busca en la base de datos el valor de los track bar
         /// </summary>
