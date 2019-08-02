@@ -48,6 +48,7 @@ namespace prueba
         {
             plantilla = 1;
             recargarPlano();
+            cerrarPaneles();
         }
 
 
@@ -56,30 +57,35 @@ namespace prueba
         {
             plantilla = 2;
             recargarPlano();
+            cerrarPaneles();
         }
 
         private void button5_Click(object sender, EventArgs e)
         {
             plantilla = 3;
             recargarPlano();
+            cerrarPaneles();
         }
 
         private void button6_Click(object sender, EventArgs e)
         {
             plantilla = 4;
             recargarPlano();
+            cerrarPaneles();
         }
 
         private void button7_Click(object sender, EventArgs e)
         {
             plantilla = 5;
             recargarPlano();
+            cerrarPaneles();
         }
 
         private void button8_Click(object sender, EventArgs e)
         {
             plantilla = 6;
             recargarPlano();
+            cerrarPaneles();
         }
 
 

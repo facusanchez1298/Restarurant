@@ -76,7 +76,7 @@ namespace prueba
             {
                 DataGridViewRow fila = dataGridView1.Rows[e.RowIndex];
                 int id_comida = int.Parse(fila.Cells[0].Value.ToString());
-                conexion.agregarPedido(padre, id_comida, 1);
+                conexion.agregarPedido(padre, id_comida, 1, padre.padre.plantilla);
                 this.padre.refrescarTabla();
             }
         }

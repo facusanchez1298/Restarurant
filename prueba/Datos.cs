@@ -39,7 +39,7 @@ namespace prueba
         {
             float total = 0;
             dataGridView1.Columns.Clear();
-            dataGridView1.DataSource = conexion.cargarTablaPedido(numeroPedido, padre.turno);
+            dataGridView1.DataSource = conexion.cargarTablaPedido(numeroPedido, padre.turno, padre.plantilla);
             dataGridView1.Columns[0].Visible = false;
             dataGridView1.Columns[1].Visible = false;
 
@@ -94,7 +94,7 @@ namespace prueba
                 }
                 else
                 {
-                    conexion.ocuparMesa(item, padre.plantilla, true, padre.turno);
+                    conexion.cambiarEstadoMesa(item, padre.plantilla, true, padre.turno);
                     buttonOcupar.Text = "Desocupar";
                     buttonAgregar.Enabled = true;
                     labelLLego.Text = DateTime.Now.ToLongTimeString();
@@ -106,7 +106,7 @@ namespace prueba
             }
             else
             {
-                conexion.ocuparMesa(item, padre.plantilla, false, padre.turno);
+                conexion.cambiarEstadoMesa(item, padre.plantilla, false, padre.turno);
                 buttonOcupar.Text = "Ocupar";
                 conexion.agregarSalida(item, padre.plantilla);
                 conexion.quitarPedidos(this);
